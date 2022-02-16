@@ -3,57 +3,14 @@
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=, initial-scale=1.0">
-  <title>Document</title>
-  <style>
-    .container {
-      margin: 0 auto;
-      text-align: center;
-    }
-
-    button {
-      font-size: 20px;  
-    }
-
-    .results {
-      font-size: 20px;
-    }
-
-    .score {
-      font-size: 40px;
-    }
-
-    p {
-      display: inline;
-    }
-
-    .player-victories, .computer-victories {
-      opacity: 1;
-      transition: all 0.5s;
-    }
-
-    .player-victories.hide {
-      opacity: 0;
-    }
-
-    .computer-victories.hide {
-      opacity: 0;
-    }
-
-  </style>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <title>Etch-a-Sketch</title>
 </head>
 <body>
-  <div class=container>
-    <br><br><br>
-  <button type="button" id="rock">🪨 Rock</button>
-  <button type="button" id="paper">📜 Paper</button>
-  <button type="button" id="scissors">✂️ Scissors</button>
-<br>
-<br>
-  <div class="results">Click a button to start the game. Best of 5 rounds.</div>
-  <br><br>
-  <div class="score">👤 <p class='player-victories'>0</p> - <p class='computer-victories'>0</p> 🤖</div>
-  </div>
-  <script type="text/javascript" src="rps.js"></script>
+  
+  <div class="grid-container"></div>
+  <button type="button" id="rock">Reset</button>
+  <script src="eas.js"></script>
 </body>
 </html>

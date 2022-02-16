@@ -1,0 +1,33 @@
+* {
+  box-sizing: border-box;
+  margin: 0 auto;
+  text-align: center;
+}
+
+:root {
+  --columns: 16;
+  --rows: 16;
+  /* --pixel-color: white; */
+}
+
+.grid-container {
+  display: grid;
+  width: 500px;
+  grid-template-columns: repeat(var(--columns), 1fr);
+  grid-template-rows: repeat(var(--rows), 1fr);
+  border-style: dashed;
+  border-color: #F1F1F1;
+  margin-top: 50px;
+  margin-bottom: 25px;
+
+}
+
+.grid-pixel {
+  background-color: black;
+  width: 100%;
+  aspect-ratio: 1;
+}
+
+.hover {
+  background-color: var(--pixel-color);
+}
